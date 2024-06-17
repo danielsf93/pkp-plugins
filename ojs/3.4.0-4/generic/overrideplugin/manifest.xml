@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <primary_locale>pt_BR</primary_locale>
+  <plugin
+    id="overrideplugin"
+    system="3.2.1-1"
+    package="overrideplugin"
+    directory="overrideplugin"
+    name="overrideplugin"
+    description="overrideplugin"
+    version="3.2.1-1"
+    date="2023-07-24"
+    author="STI FFLCH and ABCD USP"
+    email="daniel.ferreira@abcd.usp.br"
+    url="https://github.com/danielsf93/overrideplugin"
+  >
+  </plugin>
+</manifest>
