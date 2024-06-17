@@ -1,0 +1,24 @@
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-05-17 02:27+0000\n"
+"Last-Translator: Daniel Silva Ferreira <daniel.ferreira@abcd.usp.br>\n"
+"generic-ompcitation/en_US/>\n"
+"Language: en_US\n"
+
+msgid "plugins.generic.ompcitation.description"
+msgstr "This plugin adds citation format buttons for books. The styles used are ABNT, APA, ISO and VANCOUVER"
+
+msgid "plugins.generic.ompcitation.name"
+msgstr "Bibliographic Book Citation Styles for OMP"
+
+msgid "plugins.generic.ompcitation.howto"
+msgstr "HOW TO CITE"
+
+msgid "plugins.generic.ompcitation.link"
+msgstr "Available at: "
+
+msgid "plugins.generic.ompcitation.date"
+msgstr "Access on "
+
+msgid "plugins.generic.ompcitation.vanc"
+msgstr "cited "

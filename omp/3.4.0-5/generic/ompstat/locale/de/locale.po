@@ -1,0 +1,66 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30T11:56:00-07:00\n"
+"PO-Revision-Date: 2020-06-06 02:30+0000\n"
+"Last-Translator: Daniel Silva Ferreira <daniel.ferreira@abcd.usp.br>\n"
+"Language-Team: Portuguese (Brazil) "
+"plugins/ompstat-plugin/de_DE/>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.9.1\n"
+
+msgid "plugins.generic.ompstat.displayname"
+msgstr "Allgemeine Statistiken"
+
+msgid "plugins.generic.ompstat.description"
+msgstr "Statische Seite zur Anzeige der allgemeinen Statistiken des OMP-Portals - /ompstat"
+
+msgid "plugins.generic.ompstat.livrosPublicados"
+msgstr "Veröffentlichte Bücher:"
+
+msgid "plugins.generic.ompstat.totalAcessos"
+msgstr "Gesamtzugriffe:"
+
+msgid "plugins.generic.ompstat.totalDownloads"
+msgstr "Gesamte Downloads:"
+
+msgid "plugins.generic.ompstat.seriesPublicadas"
+msgstr "Veröffentlichte Serien:"
+
+msgid "plugins.generic.ompstat.totalCategorias"
+msgstr "Veröffentlichte Kategorien:"
+
+msgid "plugins.generic.ompstat.totalUsuarios"
+msgstr "Registrierte Benutzer:"
+
+msgid "plugins.generic.ompstat.totalAutores"
+msgstr "Anzahl der Autoren:"
+
+msgid "plugins.generic.ompstat.getacessosPorMes"
+msgstr "Zugriffe pro Monat"
+
+msgid "plugins.generic.ompstat.getDownloadsPorMes"
+msgstr "Downloads pro Monat"
+
+msgid "plugins.generic.ompstat.getTopLivrosMaisAcessados"
+msgstr "Meistbesuchte Bücher aller Zeiten"
+
+msgid "plugins.generic.ompstat.acess"
+msgstr "Zugriffe:"
+
+msgid "plugins.generic.ompstat.getTopAutoresComPublicacoes"
+msgstr "Autoren mit den meisten Veröffentlichungen:"
+
+msgid "plugins.generic.ompstat.have"
+msgstr "hat"
+
+msgid "plugins.generic.ompstat.pub"
+msgstr "Veröffentlichungen"
+
+msgid "plugins.generic.ompstat.getUnidadesComMaisPublicacoes"
+msgstr "Einheiten mit den meisten Veröffentlichungen:"

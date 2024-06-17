@@ -1,0 +1,36 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-02-13T00:55:57+00:00\n"
+"PO-Revision-Date: 2020-02-13T00:55:57+00:00\n"
+"Language: \n"
+
+msgid "plugins.block.mediaBlock.displayName"
+msgstr "Media Block"
+
+msgid "plugins.block.mediaBlock.description"
+msgstr "Plugin da ABCD para adicionar botões de media social. Twitter, Facebook e instagram"
+
+msgid "plugins.block.mediaBlock.sett"
+msgstr "Adicione os links das redes sociais de sua organização."
+
+msgid "plugins.block.mediaBlock.title"
+msgstr "Título"
+
+msgid "plugins.block.mediaBlock.subtitle"
+msgstr "Coloque algo como "Acesse nossas redes:", ou se desejar, deixe em branco."
+
+msgid "plugins.block.mediaBlock.twit"
+msgstr "Link do Twitter:"
+
+msgid "plugins.block.mediaBlock.face"
+msgstr "Link do Facebook:"
+
+msgid "plugins.block.mediaBlock.inst"
+msgstr "Link do Instagram:"

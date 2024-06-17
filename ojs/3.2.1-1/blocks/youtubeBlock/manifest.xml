@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <primary_locale>pt_BR</primary_locale>
+  <plugin
+    id="youtubeBlock"
+    system="3.2.1-1"
+    package="youtubeBlock"
+    directory="youtubeBlock"
+    name="youtubeBlock"
+    description="Adiciona um vídeo em formato Block do lado direito da página da revista"
+    version="1.0.0"
+    date="2023-03-20"
+    author="STI FFLCH and ABCD USP"
+    email="danielsilva@usp.br"
+    url="https://github.com/danielsf93/youtubeBlock"
+  >
+  </plugin>
+</manifest>

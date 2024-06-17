@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <primary_locale>pt_BR</primary_locale>
+  <plugin
+    id="logoABCD"
+    system="3.2.1-1"
+    package="logoABCD"
+    directory="logoABCD"
+    name="logoABCD"
+    description="Mostra o logo: Desenvolvido pela Agência de Bibliotecas e Coleções Digitais da USP"
+    version="1.0.0"
+    date="2023-03-20"
+    author="STI FFLCH and ABCD USP"
+    email="danielsilva@usp.br"
+    url="https://github.com/danielsf93/logoABCD"
+  >
+  </plugin>
+</manifest>

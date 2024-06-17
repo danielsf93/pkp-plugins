@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <primary_locale>pt_BR</primary_locale>
+  <plugin
+    id="ompcitation"
+    system="3.3.0-8"
+    package="ompcitation"
+    directory="ompcitation"
+    name="ompcitation"
+    description="Este plugin adiciona botões com o formato de citação para livros. Os estilos utilizados são ABNT, APA, ISO e VANCOUVER"
+    version="1.0.0"
+    date="2023-05-17"
+    author="Daniel Silva Ferreira"
+    email="daniel.ferreira@abcd.usp.br"
+    url="https://github.com/danielsf93/ompcitation"
+  >
+  </plugin>
+</manifest>

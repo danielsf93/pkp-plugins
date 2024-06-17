@@ -1,0 +1,21 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-02-11T02:08:20+00:00\n"
+"PO-Revision-Date: 2021-02-11T02:08:20+00:00\n"
+"Language: en-US\n"
+
+msgid "plugins.generic.get.displayName"
+msgstr "Fix URL for indexing."
+
+msgid "plugins.generic.get.description"
+msgstr "Fix the URL from the Template for better Indexing in google, based on the language of the article."
+
+msgid "plugins.generic.get.title"
+msgstr "Fix URL for indexing."

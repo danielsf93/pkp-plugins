@@ -1,0 +1,51 @@
+Instalar terminator
+sudo su
+apt update
+apt install terminator
+-configurar aplicativos padrão Default applications - utilities - terminal
+
+Instalar php 7.4
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:ondrej/php
+sudo apt update
+sudo apt install php7.4
+
+sudo apt install php7.4-common php7.4-mysql php7.4-xml php7.4-xmlrpc php7.4-curl php7.4-gd php7.4-imagick php7.4-cli php7.4-dev php7.4-imap php7.4-mbstring php7.4-opcache php7.4-soap php7.4-zip php7.4-intl -y
+
+Instalar e configurar mariadb
+sudo apt install mariadb-server
+sudo mariadb
+GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' IDENTIFIED BY 'admin' WITH GRANT OPTION;
+image
+quit
+exit
+
+Instalar ferramentas complementares
+vscodium
+https://github.com/VSCodium/vscodium/releases
+.deb
+sudo apt install ./codium_1.81.1.23222_amd64.deb
+extensão Smarty Template Support
+
+Baixar ojs versões
+
+ojs 3.2.1-1
+omp 3.3.0-8
+
+https://pkp.sfu.ca/software/ojs/download/archive/
+verificar qual é a sua versão
+
+Criar database mariadb
+mariadb -uadmin -padmin
+create database ojsaaa;
+show databases;
+quit
+
+Rodar página ojs
+php -S 0.0.0.0:8888
+http://0.0.0.0:8888/
+
+Baixar php my admin
+https://www.phpmyadmin.net/downloads/
+php -S 0.0.0.0:7777
+http://0.0.0.0:7777/

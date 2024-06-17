@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-30T11:56:00-07:00\n"
+"PO-Revision-Date: 2020-06-06 02:30+0000\n"
+"Last-Translator: Daniel Silva Ferreira <daniel.ferreira@abcd.usp.br>\n"
+"Language-Team: Portuguese (Brazil) "
+"plugins/fullsearch-plugin/pt_BR/>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.9.1\n"
+
+msgid "plugins.generic.fullsearch.displayname"
+msgstr "Livros por Unidade"
+
+msgid "plugins.generic.fullsearch.description"
+msgstr "Página com lista de livros por unidade. Após instalado, a página pode ser acessada em site.com/index.php/editora/fullsearch"
+
+msgid "plugins.generic.fullsearch.pagetitle"
+msgstr "Livros por Unidade:"
+
+msgid "plugins.generic.fullsearch.show"
+msgstr "Mostrar Lista"
+
+msgid "plugins.generic.fullsearch.hide"
+msgstr "Recolher"
