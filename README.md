@@ -9,7 +9,7 @@ The content is organized as follows:
 
 ### OJS
 
-#### 3.2.1-1 (old version of the USP magazine portal)
+#### 3.2.1-1 (old version of the USP journal portal)
 
 
 ├── <i>blocks</i><br>
@@ -27,7 +27,7 @@ The content is organized as follows:
 ├── relationalDoi<br>
 └── viewcounter<br>
 
-#### 3.4.0-4 (current version of the USP magazine portal)
+#### 3.4.0-4 (current version of the USP journal portal)
 ├── <i>blocks</i><br>
 │ │<br>
 │ ├── deepStat<br>
