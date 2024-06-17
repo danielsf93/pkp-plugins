@@ -1,4 +1,4 @@
-1.657 / 5.000
+
 # pkp-plugins
 
 This repository contains the list of PKP platform Plugins (OJS and OMP) developed for the University of São Paulo. There are also tutorials for plugin development.
