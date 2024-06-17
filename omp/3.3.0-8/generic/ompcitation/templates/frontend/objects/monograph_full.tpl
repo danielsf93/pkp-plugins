@@ -459,7 +459,7 @@
 				{$publication->getLocalizedData('copyrightHolder')}, 
 				{$publication->getData('copyrightYear')}. 
 				DOI: <a href="{$doiUrl}">{$doiUrl}</a>
-				{translate key="plugins.generic.ompcitation.link"}<a href="{$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}"> {$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}</a> .
+				{translate key="plugins.generic.ompcitation.link"}<a href="{$doiUrl}"> {$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}</a> .
 				{translate key="plugins.generic.ompcitation.date"}{$smarty.now|date_format:"%e %B. %Y"}.
 				
 				
@@ -510,7 +510,7 @@
 					 {$publication->getData('seriesPosition')}.
 					 {$publication->getLocalizedData('copyrightHolder')}.
 					 DOI: <a href="{$doiUrl}">{$doiUrl}</a>
-					 {translate key="plugins.generic.ompcitation.link"}<a href="{$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}"> {$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}</a> .
+					 {translate key="plugins.generic.ompcitation.link"}<a href="{$doiUrl}"> {$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}</a> .
 					 {translate key="plugins.generic.ompcitation.date"}{$smarty.now|date_format:"%e %b. %Y"}.
 				</div>
 			</div>
@@ -557,7 +557,7 @@
 					{$publication->getData('copyrightYear')}.
 					DOI: <a href="{$doiUrl}">{$doiUrl}</a>
 					[{translate key="plugins.generic.ompcitation.date"}{$smarty.now|date_format:"%e %B. %Y"}.]
-					{translate key="plugins.generic.ompcitation.link"}<a href="{$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}"> {$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}</a> </p>
+					{translate key="plugins.generic.ompcitation.link"}<a href="{$doiUrl}"> {$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}</a> </p>
 				</div>
 			</div>
 			<script>
@@ -603,7 +603,7 @@
 				 c{$publication->getData('copyrightYear')}. 
 				 [{translate key="plugins.generic.ompcitation.vanc"}{$smarty.now|date_format:"%e de %B %Y"}].
 				 DOI: <a href="{$doiUrl}">{$doiUrl}</a> 
-				 {translate key="plugins.generic.ompcitation.link"}<a href="{$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}"> {$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}</a> 
+				 {translate key="plugins.generic.ompcitation.link"}<a href="{$doiUrl}"> {$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI}</a> 
 				 
 				 </p>
 				</div>
