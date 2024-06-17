@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE version SYSTEM "../../../lib/pkp/dtd/pluginVersion.dtd">
+<version>
+	<application>crossref</application>
+	<type>plugins.importexport</type>
+	<release>3.1.2.1</release>
+	<date>2024-06-05</date>
+</version>
