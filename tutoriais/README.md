@@ -17,6 +17,3 @@ Para diferentes versões do OJS e OMP, utilize os manuais correspondentes:
 Para a criação de plugins para estas versões, utilize a seguinte playlist do YouTube:
 
 [![YouTube Playlist](https://img.youtube.com/vi/Kryyfbe7lMyGMKrK/0.jpg)](https://www.youtube.com/embed/videoseries?si=Kryyfbe7lMyGMKrK&amp;list=PLXIr0HUiV3Nnva33JY6Tt0jMFqWq2bOmT)
-
-### Versões Atuais (OJS 3.4.0-4 e OMP 3.4.0-5)
--A fazer...
