@@ -51,3 +51,148 @@ Baixar php my admin
 https://www.phpmyadmin.net/downloads/
 php -S 0.0.0.0:7777
 http://0.0.0.0:7777/
+
+*************************************************
+Diferenças das novas versões e orientações gerais:
+*************************************************
+-As novas versões utilizam php 8, portanto se for necessário trabalhar com versões diferentes das ferramnetas pkp, utilize maquinas virtuais. 
+Verefique as versões php compatíveis em https://www.php.net/supported-versions.php
+
+-Com as novas versões, o metodo de tradução também mudou, nao sendo necessário possuir mais de uma tradução para plugins criados. exemplos do novo sistema de tradução é:
+de_DE agora é somente de
+en_US agora é somente en
+pt_BR manteve-se
+es_ES agora possui es_ES e es_MX
+etc.
+
+-Para utilizar Banco de Dados (sql) em plugins genéricos, utilize como exemplo o plugin 'pkp-plugins/omp/3.4.0-5/generic/fullSearch/'(https://github.com/danielsf93/pkp-plugins/tree/main/omp/3.4.0-5/generic/FullSearch), atentando-se ao metodo de conexão ao banco de dados utilizado por FullSearchDAO.inc.php:
+
+ public function obterDados() {
+        $results = $this->retrieve(
+            'SELECT ps1.setting_value AS copyrightholder, ps2.setting_value AS title, ps2.publication_id AS publication_id
+            FROM publication_settings ps1
+            JOIN publication_settings ps2 ON ps1.publication_id = ps2.publication_id
+            WHERE ps1.setting_name = "copyrightHolder"
+            AND ps2.setting_name = "title"'
+        );
+    
+        $dados = array();
+
+-Para conectar banco de dados através de plugin de bloco, o método é totalmente diferente, utilize como exemplo 
+'pkp-plugins/ojs/3.2.1-1/blocks/deepStat' (https://github.com/danielsf93/pkp-plugins/tree/main/ojs/3.2.1-1/blocks/deepStat), atntando-se em deepStat.inc.php:
+
+class deepStat extends BlockPlugin {
+	//variaveis do banco de dados
+    private $databaseHost;
+    private $databaseName;
+    private $databaseUsername;
+    private $databasePassword;
+
+
+	public function getContents($templateMgr, $request = null)
+    {
+
+		$configFile = 'config.inc.php';
+
+        if (file_exists($configFile)) {
+            $config = parse_ini_file($configFile, true);
+            //acesso ao banco de dados
+            if (isset($config['database'])) {
+                $this->databaseHost = $config['database']['host'];
+                $this->databaseName = $config['database']['name'];
+                $this->databaseUsername = $config['database']['username'];
+                $this->databasePassword = $config['database']['password'];
+            }
+        }
+
+		// Chama a função para obter o número de revistas.
+        $totalRevistas = $this->totalJournals(); 
+        $totalIssues = $this->totalIssues(); 
+        $totalArticles = $this->totalArticles();  
+        $totalAcess = $this->totalAcess();   
+        $totalDownloads = $this->totalDownloads();     
+        
+        $templateMgr->assign([
+        // Variável com texto simples.
+        'madeByText' => 'Estatísticas do portal:',
+        // Variável que contém o número de revistas.
+        'totalRevistas' => $totalRevistas, 
+        'totalIssues' =>$totalIssues,
+        'totalArticles' =>$totalArticles,
+        'totalAcess' =>$totalAcess,
+        'totalDownloads' =>$totalDownloads,
+    ]);
+    
+    return parent::getContents($templateMgr, $request);
+    }
+
+//funcao que pega o numero de revistas
+	public function totalJournals() {
+        try {
+            $pdo = new PDO("mysql:host={$this->databaseHost};dbname={$this->databaseName}", $this->databaseUsername, $this->databasePassword);
+            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    // Conta o número de revistas ativas.
+            $query = "SELECT COUNT(*) as total FROM journals WHERE enabled = 1"; 
+            $stmt = $pdo->query($query);
+            $result = $stmt->fetch(PDO::FETCH_ASSOC);
+            $totalRevistas = $result['total'];
+    
+            return $totalRevistas;
+        } catch (PDOException $e) {
+            return "Erro ao conectar ao banco de dados: " . $e->getMessage();
+        }
+    }
+
+
+(...)
+
+-Para plugins de troca de template(generic), utilize como exemplo 'pkp-plugins/ojs/3.4.0-4/generic/overrideplugin'
+(https://github.com/danielsf93/pkp-plugins/tree/main/ojs/3.4.0-4/generic/overrideplugin)
+utilize o método
+
+class overrideplugin extends GenericPlugin {
+    public function register($category, $path, $mainContextId = NULL) {
+        $success = parent::register($category, $path);
+            if ($success && $this->getEnabled()) {
+
+
+//Registre o hook (gancho) para em seguida chamar em função
+
+
+               HookRegistry::register('TemplateResource::getFilename', array($this, '_overridePluginTemplates'));
+			 //  HookRegistry::register('TemplateResource::getFilename', array($this, '_overridearticle_summary'));
+    
+            }
+        return $success;
+    }
+
+//chame o hook como função
+	public function _overridePluginTemplates($hookName, $args) {
+		$templatePath = $args[0];
+
+		//substitua o arquivo tpl original pela versão contida no plugin
+		if ($templatePath === 'templates/frontend/objects/article_details.tpl') {
+			$args[0] = 'plugins/generic/overrideplugin/templates/frontend/objects/article_details.tpl';
+		}
+		return false;
+	}
+
+observe que 
+'if ($templatePath === 'templates/frontend/obj...) depende diretamente de sua versão, adapte os caminhos para a 'sobreposição' dos arquivos necessários.
+
+
+*******************************
+links uteis
+*******************************
+Forum ibct: https://forum.ibict.br/
+Forum pkp: https://forum.pkp.sfu.ca/
+
+Documentação da pkp: https://docs.pkp.sfu.ca/dev/plugin-guide/en/getting-started
+
+Rotina de pesquisa de novidades de plugin: 
+https://github.com/search?q=ojs+plugin&type=repositories&s=updated&o=desc
+https://github.com/search?q=omp+plugin&type=repositories&s=updated&o=desc
+
+
+
+
